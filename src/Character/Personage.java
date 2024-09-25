@@ -9,7 +9,7 @@ public class Personage {
     private String type;
     private int levelHealth;
     private int attack;
-    private String offensiveEquipement;
+    private String offensiveEquipment;
     private String defensiveEquipment;
 
     // LANCEMENT DES GETTERS******************************************************************************************
@@ -25,39 +25,26 @@ public class Personage {
     public int getAttack(){
         return attack;
     }
-    public String getOffensiveEquipement(){
-        return offensiveEquipement;
-    }
-    public String getDefensiveEquipment(){
-        return defensiveEquipment;
-    }
-
     //LANCEMENT DES CONSTRUCTEURS***************************************************************************************
-    public Personage(String name, String type) {
+    public Personage(String name, String type, int attack, int levelHealth, String offensiveEquipment,String defensiveEquipment)
+    {
         this.name = name;
         this.type = type;
-
-         if(type.equals("warrior")){
-            levelHealth=10;
-            attack=10;
-            offensiveEquipement="Weapon";
-            defensiveEquipment="Shield";
+        this.attack = attack;
+        this.levelHealth=levelHealth;
+        this.offensiveEquipment=offensiveEquipment;
+        this.defensiveEquipment=defensiveEquipment;
 
         }
-        else if(type.equals("mage")){
-            levelHealth=6;
-            attack=15;
-            offensiveEquipement="Spell";
-            defensiveEquipment="Philter";
-        }
-
-    }
-// LANCEMENT DE LA CREATION DES PERSONNAGES*****************************************************************************
     public String toString(){
+
         return "Nom: " + name + "\n" +  "Type: " + type + "\n"+  "HP : "+ levelHealth + "\n" + "Attack : "+ attack+"\n"+
-                "Offensive Equipment: "+ offensiveEquipement +"\n"+"Defensive Equipment: "+defensiveEquipment+"\n";
+                "Offensive Equipment: "+offensiveEquipment+ "\n"+"Defensive Equipment: "+defensiveEquipment+"\n";
+
+    }
 
     }
 
 
-}
+
+

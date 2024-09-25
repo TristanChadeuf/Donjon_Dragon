@@ -27,10 +27,10 @@ public class Menu {
                 System.out.print("Choice your personage : Warrior = 1 or  Mage = 2  or Quit = 3");
                 choice = clavier.nextInt();
                 if (choice == 2) {
-                    Personage mage = new Personage("Roberto", "mage");
+                    Personage mage = new Spell();
                     System.out.println("Start of the game with" + "\n"+mage);
                 } else if (choice == 1) {
-                    Personage warrior = new Personage("Patrice", "warrior");
+                    Personage warrior = new Weapon();
                     System.out.println("Start of the game with "+warrior);
 
                 }else if (choice == 3){
