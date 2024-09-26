@@ -9,7 +9,7 @@ public class Menu {
 
             Scanner clavier = new Scanner(System.in);
             while(choice != 1 && choice != 2 ) {
-                System.out.print("New game ? : Yes = 1 or No = 2 ");
+                System.out.print("New game ? : Yes = 1 or No = 2");
                 choice = clavier.nextInt();
 
                 if (choice == 1) {
@@ -19,6 +19,10 @@ public class Menu {
                     System.out.println("End Game");
                     clavier.close();
 
+
+                }else {
+
+                    System.out.println("TU SAIS PAS LIRE CONNARD");
                 }
             }
              choice = 0;

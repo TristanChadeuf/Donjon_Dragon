@@ -1,9 +1,7 @@
 package Character;
 
-import java.net.StandardSocketOptions;
-
 // Creation de la classe Personnage**********************************************************************************
-public class Personage {
+public abstract class Personage {
     // creation des variable liés au personnage
     private String  name;
     private String type;
@@ -36,6 +34,7 @@ public class Personage {
         this.defensiveEquipment=defensiveEquipment;
 
         }
+
     public String toString(){
 
         return "Nom: " + name + "\n" +  "Type: " + type + "\n"+  "HP : "+ levelHealth + "\n" + "Attack : "+ attack+"\n"+

@@ -1,6 +1,6 @@
 package Character;
 
-public class DefensiveEquipment {
+public abstract class DefensiveEquipment {
     private String shield;
     private String philter;
     private int levelDefense;
