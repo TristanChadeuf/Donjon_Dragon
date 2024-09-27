@@ -1,9 +1,7 @@
 package Game;
 
-import Cases.EmptyCase;
-import Cases.EnnemiCase;
-import Cases.PotionCases;
-import Cases.WeaponCase;
+import Cases.Case;
+import Cases.Cases;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,14 +38,15 @@ public class Game {
         boolean blue = false;
         boolean yellow = false;
 
-        List<EmptyCase> plateau = new ArrayList<>();
+        List<Case> plateau = new ArrayList<>();
 
         while (total <= plateau.toArray().length) {
             new java.util.Scanner(System.in).nextLine();
             int dice = 1 + (int) (Math.random() * 1);
             total = total + dice;
 
-            plateau.add(new EmptyCase());
+            plateau.add(new Case());
+
 
             if (total >= 1 && total < 20) {
                 if (!green) {
