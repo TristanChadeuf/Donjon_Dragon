@@ -2,9 +2,8 @@ package Cases;
 
 public interface Cases {
 
-    public abstract void CasesEmpty();
-    public abstract void CasesPotion();
-    public  abstract void CasesEnnemi();
-    public abstract void CasesWeapon();
-
+    public void CasesEmpty();
+    public void CasesEnnemi();
+    public void CasesWeapon();
+    public void CasesPotion();
 }

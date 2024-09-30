@@ -1,11 +1,7 @@
 package Game;
 
-import Cases.Case;
-import Cases.Cases;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import java.util.Scanner;
 
 public class Game {
 
@@ -23,6 +19,8 @@ public class Game {
     public static final String ANSI_BLUE_BACKGROUND = "\u001B[44m";
     public static final String ANSI_YELLOW_BACKGROUND = "\u001B[43m";
 
+
+
     //ADVANCEMENT DES GETTERS*********************************************************************************************
 
     public int getTotal() {
@@ -33,20 +31,18 @@ public class Game {
     }
     //ADVANCEMENT DE LA METHODE POUR LE PLATEAU***************************************************************************
 
+
+
     public void game() {
         boolean green = false;
         boolean blue = false;
         boolean yellow = false;
 
-        List<Case> plateau = new ArrayList<>();
 
-        while (total <= plateau.toArray().length) {
-            new java.util.Scanner(System.in).nextLine();
+        while (total <= 64) {
+            new Scanner(System.in).nextLine();
             int dice = 1 + (int) (Math.random() * 1);
             total = total + dice;
-
-            plateau.add(new Case());
-
 
             if (total >= 1 && total < 20) {
                 if (!green) {
@@ -71,7 +67,9 @@ public class Game {
                 break;
             }
             System.out.println("Your character throw the dice \n" + "HO the dice worth " + dice + "\n" + "Your character is on the square " + total + "\n");
+
         }
+
     }
 
 }
