@@ -1,7 +1,9 @@
 package Game;
-
-
 import java.util.Scanner;
+import Character.*;
+import db.DataBase;
+
+import java.sql.SQLException;
 
 public class Game {
 
@@ -33,15 +35,17 @@ public class Game {
 
 
 
-    public void game() {
+    public void Game() throws SQLException {
         boolean green = false;
         boolean blue = false;
         boolean yellow = false;
 
+        Menu menu = new Menu();
+        menu.Menu();
 
         while (total <= 64) {
             new Scanner(System.in).nextLine();
-            int dice = 1 + (int) (Math.random() * 1);
+            int dice = 1 + (int) (Math.random() * 6);
             total = total + dice;
 
             if (total >= 1 && total < 20) {
@@ -68,8 +72,7 @@ public class Game {
             }
             System.out.println("Your character throw the dice \n" + "HO the dice worth " + dice + "\n" + "Your character is on the square " + total + "\n");
 
+            }
+
         }
-
     }
-
-}

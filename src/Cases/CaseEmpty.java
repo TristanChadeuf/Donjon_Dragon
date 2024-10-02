@@ -9,21 +9,6 @@ package Cases;
 
         }
 
-        @Override
-        public void CasesEnnemi() {
-
-        }
-
-        @Override
-        public void CasesWeapon() {
-
-        }
-
-        @Override
-        public void CasesPotion() {
-
-        }
-
         public String toString(){
             return "La case est vide";
         }

@@ -23,6 +23,12 @@ public abstract class Personage {
     public int getAttack(){
         return attack;
     }
+    public String getoffensiveEquipment(){
+        return offensiveEquipment;
+    }
+    public String getdefensiveEquipment(){
+        return defensiveEquipment;
+    }
     //LANCEMENT DES CONSTRUCTEURS***************************************************************************************
     public Personage(String name, String type, int attack, int levelHealth, String offensiveEquipment,String defensiveEquipment)
     {
@@ -32,6 +38,10 @@ public abstract class Personage {
         this.levelHealth=levelHealth;
         this.offensiveEquipment=offensiveEquipment;
         this.defensiveEquipment=defensiveEquipment;
+
+        }
+
+        public Personage(){
 
         }
 

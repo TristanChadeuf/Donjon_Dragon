@@ -3,7 +3,7 @@ package Character;
 public class Spell extends Mage{
 
 
-    public Spell( ){
+    public Spell(){
        super("Spell","Philter");
 
     }

@@ -1,24 +1,18 @@
 package Cases;
+import Character.*;
+import db.DataBase;
+
+import java.sql.SQLException;
 
 public class CasesPotion implements Cases{
 
-    @Override
-    public void CasesEmpty() {
+    public void CasesPotion() throws SQLException {
 
-    }
+        DataBase DBd = new DataBase();
+        DBd.changeHealthPoints(new Personage() {
+        });
+        System.out.println("HP 10 > 15 !");
 
-    @Override
-    public void CasesEnnemi() {
-
-    }
-
-    @Override
-    public void CasesWeapon() {
-
-    }
-
-    @Override
-    public void CasesPotion() {
 
         String message = toString();
         System.out.println(message);
