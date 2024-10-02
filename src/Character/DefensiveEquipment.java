@@ -1,8 +1,15 @@
 package Character;
 
-public abstract class DefensiveEquipment {
-    private String shield;
-    private String philter;
-    private int levelDefense;
-    private String name;
+public abstract class DefensiveEquipment extends Personage {
+    
+    private String shield = "shield";
+    private String philter = "philter";
+
+
+    public DefensiveEquipment(String shield, String philter) {
+
+        this.shield = shield;
+        this.philter = philter;
+
+    }
 }

@@ -7,8 +7,9 @@ public class Main {
 
     //ADVANCEMENT DES PROGRAMMES****************************************************************************************
     public static void main(String[] args) throws SQLException {
-       Game game = new Game();
-       game.Game();
+
+        new Game();
+
 
     }
 }

@@ -1,10 +1,11 @@
 package Cases;
 
-    public class CaseEmpty  implements Cases {
 
-        public void CasesEmpty() {
+public class CasesEmpty  implements Cases {
 
-            String message= toString();
+        public CasesEmpty() {
+
+            String message = toString();
              System.out.println(message);
 
         }

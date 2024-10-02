@@ -18,7 +18,7 @@ public abstract class Warrior extends Personage{
 
     //CONSTRUCTEUR******************************************************************************************************
     public Warrior( String offensiveEquipement, String defensiveEquipment ) {
-        super("Patrick","Warrior", 10, 10,offensiveEquipement,defensiveEquipment);
+        super("Tristan","Warrior", 10, 10,offensiveEquipement,defensiveEquipment);
         this.offensiveEquipement=offensiveEquipement;
         this.defensiveEquipment=defensiveEquipment;
 

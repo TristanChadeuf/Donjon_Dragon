@@ -1,28 +1,26 @@
 package Character;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-
-import Cases.CasesPotion;
 import db.DataBase;
 import java.util.Scanner;
 
+
 public class Menu {
 
-    public void Menu() throws SQLException {
+    public Menu() throws SQLException {
+        new Scanner(System.in).nextLine();
             int choice = 0;
             int id;
             Scanner clavier = new Scanner(System.in);
             while(choice != 1 && choice != 2 ) {
                 System.out.print("New game ? : Yes = 1 or No = 2");
                 choice = clavier.nextInt();
-
+                clavier.nextLine();
                 if (choice == 1) {
                     System.out.println("Game started");
 
                 } else if (choice == 2) {
                     System.out.println("End Game");
                     clavier.close();
-
 
                 }else {
 
@@ -41,7 +39,6 @@ public class Menu {
                     System.out.println("Press enter");
                 }
             }
-
             choice = 0;
 
             while(choice != 1 && choice != 2 && choice != 3 && choice !=4 ) {

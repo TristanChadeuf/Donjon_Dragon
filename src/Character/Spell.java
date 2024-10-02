@@ -7,5 +7,4 @@ public class Spell extends Mage{
        super("Spell","Philter");
 
     }
-
 }

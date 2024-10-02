@@ -13,9 +13,11 @@ public abstract class OffensiveEquipment {
 
     // LANCEMENT DES GETTERS******************************************************************************************
 
-
+    
 //CREATION DES CONSTRUCTEURS*****************************************************************************************
+public OffensiveEquipment() {
 
+}
 
 
 }

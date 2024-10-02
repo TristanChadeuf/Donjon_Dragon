@@ -1,14 +1,15 @@
 package Character;
 
 // Creation de la classe Personnage**********************************************************************************
-public abstract class Personage {
-    // creation des variable liés au personnage
+public class Personage {
+    // creation des variable liés au personage
     private String  name;
     private String type;
     private int levelHealth;
     private int attack;
     private String offensiveEquipment;
     private String defensiveEquipment;
+
 
     // LANCEMENT DES GETTERS******************************************************************************************
     public String getName(){
@@ -29,6 +30,15 @@ public abstract class Personage {
     public String getdefensiveEquipment(){
         return defensiveEquipment;
     }
+     //LANCEMENT DES SETTERS********************************************************************************************
+
+    public void setLevelHealth(int newLevelHealth){
+        this.levelHealth = newLevelHealth;
+    }
+    public void setAttack(int newAttack){
+        this.attack=newAttack;
+    }
+
     //LANCEMENT DES CONSTRUCTEURS***************************************************************************************
     public Personage(String name, String type, int attack, int levelHealth, String offensiveEquipment,String defensiveEquipment)
     {
@@ -42,6 +52,11 @@ public abstract class Personage {
         }
 
         public Personage(){
+
+        }
+
+        public Personage(String name){
+        this.name = name;
 
         }
 
