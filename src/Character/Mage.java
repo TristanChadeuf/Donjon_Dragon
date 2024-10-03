@@ -17,7 +17,7 @@ public abstract class Mage extends Personage{
     }
 
     public Mage(String offensiveEquipement, String defensiveEquipment ) {
-        super("Tristan","Mage", 15, 6,offensiveEquipement,defensiveEquipment);
+        super("Tristan","Mage", 10, 10,offensiveEquipement,defensiveEquipment);
         this.offensiveEquipement=offensiveEquipement;
         this.defensiveEquipment=defensiveEquipment;
     }

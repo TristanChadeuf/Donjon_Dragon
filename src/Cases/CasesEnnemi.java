@@ -1,17 +1,23 @@
 package Cases;
- import Character.*;
+
+ import figth.*;
 
 public class CasesEnnemi implements Cases {
 
-    Dragon dragon = new Dragon(2,10);
-
    public CasesEnnemi() {
 
-        String message = toString();
-        System.out.println(message);
-    }
-    public String toString(){
-
-        return  "Graou je suis un ennemi" + dragon;
+       int dice = 1 + (int) (Math.random() * 3);
+        if (dice == 1) {
+            System.out.println("DRAGON ! WATCH OUT FOR FLAMES ");
+            new figthDragon();
+        }
+        if (dice == 2) {
+            System.out.println("Gobelin so boring ... ");
+            new figthGobelin();
+        }
+        if (dice == 3) {
+            System.out.println("OH PUTAIN FADA MONA LISA FUIT ");
+            new figthMonaLisa();
+        }
     }
 }

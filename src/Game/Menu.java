@@ -1,18 +1,19 @@
-package Character;
+package Game;
 import java.sql.SQLException;
 import db.DataBase;
 import java.util.Scanner;
-
+import Character.*;
 
 public class Menu {
+    public static final String PURPLE_BOLD = "\033[1;35m";
 
     public Menu() throws SQLException {
-        new Scanner(System.in).nextLine();
+
             int choice = 0;
-            int id;
+
             Scanner clavier = new Scanner(System.in);
             while(choice != 1 && choice != 2 ) {
-                System.out.print("New game ? : Yes = 1 or No = 2");
+                System.out.print(PURPLE_BOLD+"New game ? : Yes = 1 or No = 2");
                 choice = clavier.nextInt();
                 clavier.nextLine();
                 if (choice == 1) {
@@ -60,11 +61,10 @@ public class Menu {
                     clavier.close();
                 }else if (choice == 3){
                     System.out.println("Write the id of Heros");
-                    id = clavier.nextInt();
+                    int id = clavier.nextInt();
                     DataBase DBc = new DataBase();
                     DBc.getOneHero(id);
                 }
-
             }
 
         }
