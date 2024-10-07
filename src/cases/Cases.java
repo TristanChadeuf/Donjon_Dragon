@@ -1,4 +1,4 @@
-package Cases;
+package cases;
 
 public interface Cases {
 

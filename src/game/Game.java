@@ -1,32 +1,26 @@
-package Game;
+package game;
+
 import java.util.Scanner;
 
-import Cases.CasesEnnemi;
-import Cases.CasesPotion;
-import Cases.CasesWeapon;
+import cases.*;
 
 import java.sql.SQLException;
 
 public class Game {
 
     //INITIALISATION DES VARIABLES**************************************************************************************
-    private int total = 0;
+    private int total;
     String y = Character.toString(0x1F332);
     String i = Character.toString(0x1F4A6);
     String k = Character.toString(0x1F334);
 
-    //INITIALIATION DES VARIABLES POUR LA COULEUR***********************************************************************
+    //INITIALIZATION DES VARIABLES POUR LA COLOR***********************************************************************
 
     public static final String ANSI_GREEN_BACKGROUND = "\u001B[42m";
     public static final String BLACK_BOLD = "\033[1;30m";
     public static final String ANSI_BLUE_BACKGROUND = "\u001B[44m";
     public static final String ANSI_YELLOW_BACKGROUND = "\u001B[43m";
 
-    //ADVANCEMENT DES GETTERS*********************************************************************************************
-
-    public int getTotal() {
-        return total;
-    }
     //ADVANCEMENT DE LA METHODE POUR LE PLATEAU***************************************************************************
 
     public Game() throws SQLException {
@@ -65,15 +59,17 @@ public class Game {
             System.out.println("Your character throw the dice \n" + "HO the dice worth " + dice + "\n" +
                     "Your character is on the square " + total + "\n");
 
-            if (total==3 || total == 4 || total == 26 || total == 49 || total == 51 || total == 15 || total == 34 || total==7 || total == 16 || total == 25 || total == 48 || total == 50 || total == 14 || total == 33) {
-                new CasesEnnemi();
+            if (total == 3 || total == 4 || total == 26 || total == 49 || total == 51 || total == 15 || total == 34 || total == 7 || total == 16 || total == 25 || total == 48 || total == 50 || total == 14 || total == 33) {
+                new CasesEnemy();
             }
-            if (total == 9 || total == 21 || total == 37 || total == 52){
-                new CasesPotion();
+            if (total == 9 || total == 21 || total == 37 || total == 52) {
+                new CasesMysteryBox();
             }
-            if (total == 14 || total == 28 || total == 31 || total == 47){
-                new CasesWeapon();
-            }
+            if (total == 14 || total == 28 || total == 31 || total == 47) {
+                new CasesMysteryBox();
+            } else {
+                new CasesEmpty();
             }
         }
     }
+}

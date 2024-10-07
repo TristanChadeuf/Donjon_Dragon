@@ -1,4 +1,4 @@
-package Cases;
+package cases;
 
 
 public class CasesEmpty  implements Cases {
@@ -11,6 +11,6 @@ public class CasesEmpty  implements Cases {
         }
 
         public String toString(){
-            return "La case est vide";
+            return "The case is empty";
         }
     }
