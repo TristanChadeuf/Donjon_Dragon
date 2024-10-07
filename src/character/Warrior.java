@@ -1,27 +1,10 @@
 package character;
 
-
-public abstract class Warrior extends Personage {
-
-    private final String offensiveEquipment;
-    private final String defensiveEquipment;
-
-
-    //GETTERS***********************************************************************************************************
-
-    public String getOffensiveEquipment() {
-        return offensiveEquipment;
-    }
-
-    public String getDefensiveEquipment() {
-        return defensiveEquipment;
-    }
+public class Warrior extends Personage {
 
     //CONSTRUCTOR******************************************************************************************************
-    public Warrior(String offensiveEquipment, String defensiveEquipment) {
-        super("Tristan", "Warrior", 10, 10, offensiveEquipment, defensiveEquipment);
-        this.offensiveEquipment = offensiveEquipment;
-        this.defensiveEquipment = defensiveEquipment;
+    public Warrior() {
+        super("Tristan", "Warrior", 10, 10, "Sword", "Shield");
 
     }
 

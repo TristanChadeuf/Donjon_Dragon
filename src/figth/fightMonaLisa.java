@@ -5,10 +5,10 @@ import enemy.MonaLisa;
 
 import java.util.Scanner;
 
-public class fightMonaLisa {
+public class fightMonaLisa extends Fight {
     //VARIABLES*****************************************************************************************************
-    MonaLisa monaLisa = new MonaLisa(3, 50);
-    Personage Hero = new Spell();
+    MonaLisa monaLisa = new MonaLisa();
+    Personage Hero = new Mage();
     String emoticonFight = Character.toString(0x1F47A);
 
     //CONSTRUCTOR*******************************************************************

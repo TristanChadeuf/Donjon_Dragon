@@ -9,11 +9,11 @@ public class CasesEnemy implements Cases {
        int dice = 1 + (int) (Math.random() * 3);
         if (dice == 1) {
             System.out.println("DRAGON ! WATCH OUT FOR FLAMES ");
-            new fightDragon();
+            new FightDragon();
         }
         if (dice == 2) {
             System.out.println("Goblin so boring... ");
-            new fightGoblin();
+            new FightGoblin();
         }
         if (dice == 3) {
             System.out.println("OH MONA LISA ");

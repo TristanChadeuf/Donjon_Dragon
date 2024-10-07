@@ -5,10 +5,10 @@ import enemy.Goblin;
 
 import java.util.Scanner;
 
-public class fightGoblin {
+public class FightGoblin extends Fight {
     //VARIABLES*********************************************************************************************************
-    Goblin goblin = new Goblin(1, 15);
-    Personage Hero = new Spell();
+    Goblin goblin = new Goblin();
+    Personage Hero = new Mage();
     String emoticonFight = Character.toString(0x1F47A);
 
 //GETTERS***************************************************************************************************************
@@ -23,7 +23,7 @@ public class fightGoblin {
     }
 
     //CONSTRUCTOR*******************************************************************************************************
-    public fightGoblin() {
+    public FightGoblin() {
         System.out.println("COMBAT" + emoticonFight + emoticonFight + emoticonFight + emoticonFight + emoticonFight + emoticonFight + emoticonFight + emoticonFight);
         int choice = 0;
         System.out.println("""

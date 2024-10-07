@@ -1,46 +1,12 @@
 package enemy;
 
-public class MonaLisa {
+public class MonaLisa extends Enemy {
 
-    //CREATION DES VARIABLES****************************************************
+    //CONSTRUCTOR******************************************************************************************************
 
-    private int attack;
-    private int levelHealth;
-
-    //GETTERS***********************************************************************************************************
-
-    public int getAttack() {
-        return attack;
-    }
-
-    public int getLevelHealth() {
-        return levelHealth;
-    }
-
-    //SETTERS***********************************************************************************************************
-    public int setAttackMonaLisa(int newAttack) {
-        this.attack = newAttack;
-        return newAttack;
-    }
-
-    public int setLevelHealthMonaLisa(int newLevelHealth) {
-        this.levelHealth = newLevelHealth;
-        return newLevelHealth;
-    }
-
-    //CONSTRUCTOR*******************************************************************************************************
-    public MonaLisa(int attack, int levelHealth) {
-
-        this.attack = attack;
-        this.levelHealth = levelHealth;
-
-    }
-    //STRING************************************************************************************************************
-
-    public String toString() {
-        return " \n Mona Lisa" + " HP : " + levelHealth + " Attack : " + attack;
+    public MonaLisa(){
+        super(3,50);
     }
 }
-
 
 

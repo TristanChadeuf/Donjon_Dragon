@@ -47,13 +47,13 @@ public class Menu {
                 choice = clavier.nextInt();
                 if (choice == 2) {
                     DataBase DBa = new DataBase();
-                    DBa.createHeroes(new Spell());
-                    Personage mage = new Spell();
+                    DBa.createHeroes(new Mage());
+                    Personage mage = new Mage();
                     System.out.println("Start of the game with" + "\n"+mage);
                 } else if (choice == 1) {
                     DataBase DBb = new DataBase();
-                    DBb.createHeroes(new Weapon());
-                    Personage warrior = new Weapon();
+                    DBb.createHeroes(new Warrior());
+                    Personage warrior = new Warrior();
                     System.out.println("Start of the game with "+warrior);
 
                 }else if (choice == 4){

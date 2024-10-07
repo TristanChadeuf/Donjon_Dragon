@@ -5,15 +5,15 @@ import enemy.Dragon;
 
 import java.util.Scanner;
 
-public class fightDragon {
+public class FightDragon extends Fight{
     //VARIABLES*********************************************************************************************************
-    Dragon dragon = new Dragon(2, 30);
-    Personage Hero = new Spell();
+    Dragon dragon = new Dragon();
+    Personage Hero = new Mage();
 
     String emoticonFight = Character.toString(0x1F47A);
 
     //CONSTRUCTOR******************************************************************************************************
-    public fightDragon() {
+    public FightDragon() {
         System.out.println("COMBAT" + emoticonFight + emoticonFight + emoticonFight + emoticonFight + emoticonFight + emoticonFight + emoticonFight + emoticonFight);
         int choice = 0;
         System.out.println("""
